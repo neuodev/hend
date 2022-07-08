@@ -14,7 +14,7 @@ const Skills = () => {
             key={skill}
             className="flex flex-col items-center justify-center flex-wrap pb-6 pr-6"
           >
-            <p className="text-xs sm:text-base md:text-lg font-medium capitalize text-center w-32 h-32 md:w-60 md:h-60 lg:w-40 lg:h-40 bg-indigo-200 text-indigo-900 rounded-full shadow-xl hover:shadow-2xl hover:bg-indigo-300 hover:text-indigo-800 transform hover:-translate-y-4 transition duration-300 cursor-pointer md:px-4 ring ring-indigo-300 border-indigo-300 hover:ring-indigo-400 flex flex-col items-center justify-center ">
+            <p className="text-xs sm:text-base md:text-lg font-medium capitalize text-center w-32 h-32 md:w-60 md:h-60 lg:w-40 lg:h-40 bg-blue-200 text-blue-900 rounded-full shadow-xl hover:shadow-2xl hover:bg-blue-300 hover:text-blue-800 transform hover:-translate-y-4 transition duration-300 cursor-pointer md:px-4 ring ring-blue-300 border-blue-300 hover:ring-blue-400 flex flex-col items-center justify-center ">
               {skill}
             </p>
           </div>

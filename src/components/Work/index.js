@@ -7,6 +7,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { workExperiences } from "./list";
 
+const timeLineColor = "#60a5fa";
+
 const Work = () => {
   return (
     <div className="py-10">
@@ -21,11 +23,11 @@ const Work = () => {
               className="vertical-timeline-element--work"
               date={we.date}
               dateClassName="xl:text-gray-900"
-              contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              contentStyle={{ background: timeLineColor, color: "#fff" }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: `7px solid  ${timeLineColor}`,
               }}
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: timeLineColor, color: "#fff" }}
             >
               <h3 className="vertical-timeline-element-title">
                 {we.jobTitle} @{" "}
