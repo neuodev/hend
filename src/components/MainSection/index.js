@@ -40,7 +40,7 @@ const MainSection = () => {
             Hend ibarhim
           </h1>
           <p className="text-xl font-medium  text-gray-800 mb-8">
-            SEO Technical Specialist
+            Search Engine Optimization Specialist
           </p>
           <div className="flex items-center justify-center mb-8 text-center">
             <Link
@@ -55,7 +55,7 @@ const MainSection = () => {
             </Link>
 
             <a
-              href="/files/hend.pdf"
+              href="/files/Hend  Ibrahim - SEO Specialist.pdf"
               download
               className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer"
             >
@@ -80,6 +80,11 @@ const MainSection = () => {
               </a>
             ))}
           </div>
+
+          <p className="text-xl font-light  text-gray-800 mb-8 max-w-md text-center mt-8">
+            If there is one thing to know about me it’s that I love to learn,
+            grow and glow.
+          </p>
         </div>
       </div>
     </div>

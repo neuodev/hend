@@ -41,15 +41,15 @@ export const tools = [
     name: "MOZ",
   },
   {
-    icon: "/assets/tootls/semrush.png",
+    icon: "/assets/tools/semrush.png",
     name: "Semrush",
   },
   {
-    icon: "/assets/tootls/screaming-frog.png",
+    icon: "/assets/tools/screaming-frog.png",
     name: "Screaming Frog",
   },
   {
-    icon: "/assets/tootls/bing.jpeg",
+    icon: "/assets/tools/bing.jpeg",
     name: "Bing Webmaster Tools",
   },
   {
@@ -61,7 +61,7 @@ export const tools = [
     name: "Hotjar",
   },
   {
-    icon: "/assets/tools/TubeBuddy.png",
+    icon: "/assets/tools/TubeBuddy.jpeg",
     name: "TubeBuddy",
   },
 ];

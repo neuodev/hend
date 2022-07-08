@@ -9,7 +9,7 @@ const Projects = () => {
         <div
           id={`project-${idx + 1}`}
           key={idx}
-          className="grid grid-cols-12 grid-rows-6 w-full h-screen border-b border-gray-400 py-20"
+          className="grid grid-cols-12 grid-rows-6 w-full h-screen border-b border-gray-200 py-20"
         >
           <div className="col-span-12 lg:col-span-6 row-span-3 lg:row-span-full">
             <Slides />
