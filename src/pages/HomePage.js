@@ -9,7 +9,7 @@ import Work from "../components/Work";
 
 const HomePage = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 w-full h-full overflow-hidden">
       <MainSection />
       <Projects />
       <Work />
