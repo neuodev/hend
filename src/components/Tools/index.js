@@ -10,10 +10,10 @@ const Tools = () => {
       <div className="grid grid-cols-12 gap-10 max-w-screen-lg">
         {tools.map((tool) => (
           <div
-            className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 flex flex-col items-center justify-center"
+            className="col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3 flex flex-col items-center justify-center"
             key={tool.name}
           >
-            <div className="w-52 h-48 bg-white shadow-xl flex items-center justify-center rounded-full overflow-hidden hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+            <div className="w-40 h-40 sm:w-52 sm:h-48 bg-white shadow-xl flex items-center justify-center rounded-full overflow-hidden hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
               <img
                 className="w-52 h-auto inline-block object-cover"
                 src={tool.icon}
