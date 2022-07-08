@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "../components/AboutMe";
+import Footer from "../components/Footer";
 import MainSection from "../components/MainSection";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Tools />
       <Skills />
       <AboutMe />
+      <Footer />
     </div>
   );
 };
