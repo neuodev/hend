@@ -17,7 +17,7 @@ export const tools = [
   },
   {
     icon: "/assets/tools/keyword-planner.png",
-    name: "Google Ads Keyword Planner",
+    name: "Google Keyword Planner",
   },
   {
     icon: "/assets/tools/google-trends.png",
