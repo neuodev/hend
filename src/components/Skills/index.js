@@ -9,7 +9,10 @@ const Skills = () => {
       </h1>
       <div className="grid grid-cols-12 gap-10 max-w-screen-lg">
         {skills.map((skill) => (
-          <div className="col-span-12 sm:col-span-6 md:col-span-4 flex flex-col items-center justify-center h-32 bg-indigo-200 text-indigo-900 rounded-xl shadow-xl hover:shadow-2xl hover:bg-indigo-300 hover:text-indigo-800 transform hover:-translate-y-4 transition duration-300 cursor-pointer px-4 ring ring-indigo-300 border-indigo-300 hover:ring-indigo-400">
+          <div
+            key={skill}
+            className="col-span-12 sm:col-span-6 md:col-span-4 flex flex-col items-center justify-center h-32 bg-indigo-200 text-indigo-900 rounded-xl shadow-xl hover:shadow-2xl hover:bg-indigo-300 hover:text-indigo-800 transform hover:-translate-y-4 transition duration-300 cursor-pointer px-4 ring ring-indigo-300 border-indigo-300 hover:ring-indigo-400"
+          >
             <p className="text-lg font-medium capitalize text-center">
               {skill}
             </p>

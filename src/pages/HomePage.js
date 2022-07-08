@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <div className="bg-gray-50">
       <MainSection />
-      <Work />
       <Projects />
+      <Work />
       <Tools />
       <Skills />
       <AboutMe />

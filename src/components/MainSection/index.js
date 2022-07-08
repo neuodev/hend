@@ -1,40 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import Modal from "../common/Modal";
 
 const socialMedia = [
   {
     icon: "/assets/email.png",
-    link: "some link",
+    link: "mailto:hendibrahim468@gmail.com?Subject=Let's%20Talk",
     name: "Email",
+    state: {
+      whatsapp: false,
+      email: true,
+    },
   },
   {
     icon: "/assets/linkedin.png",
-    link: "some link",
+    link: "https://www.linkedin.com/in/seoseoexpert/",
     name: "Linked In",
   },
   {
     icon: "/assets/telegram.png",
-    link: "some link",
+    link: "https://t.me/hendibrahimseo",
     name: "Telegram",
   },
   {
     icon: "/assets/whatsapp.png",
-    link: "some link",
+    link: "https://api.whatsapp.com/send?phone=+201551304568&text&app_absent=0",
     name: "Whatsapp",
+    state: {
+      whatsapp: true,
+      email: false,
+    },
   },
 ];
 
+const defaultState = {
+  whatsapp: false,
+  email: false,
+};
+
 const MainSection = () => {
+  const [open, setOpen] = useState(defaultState);
+
+  const modals = [
+    {
+      isOpen: open.whatsapp,
+      title: "Whatsapp",
+      content: "+20 015 513 045 68",
+      icon: "/assets/whatsapp.png",
+    },
+    {
+      isOpen: open.email,
+      title: "Email",
+      content: "hendibrahim468@gmail.com",
+      icon: "/assets/email.png",
+    },
+  ];
   return (
     <div className="h-screen">
       <div className="grid grid-cols-12 grid-rows-6 h-full w-full">
-        <div className="col-span-12 md:col-start-7 md:col-end-13 row-span-3 md:row-span-full">
-          <img
-            className="w-full h-full object-cover inline-block"
-            src="/assets/hend.jpeg"
-            alt="Hend ibrahim"
-          />
-        </div>
+        <div
+          className="col-span-12 md:col-start-7 md:col-end-13 row-span-3 md:row-span-full bg-gray-100"
+          style={{
+            background: "url(/assets/hend.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "40% 20%",
+          }}
+        />
         <div className="col-span-12 md:col-start-1 md:col-end-7 row-span-3 md:row-span-full flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold text-gray-800 mb-4">
             Hend ibarhim
@@ -64,21 +95,42 @@ const MainSection = () => {
           </div>
 
           <div>
-            {socialMedia.map((media, idx) => (
-              <a
-                className={`w-12 h-12 inline-block ${
-                  idx !== socialMedia.length && "mr-4"
-                }`}
-                key={media.name}
-                href={media.link}
-              >
-                <img
-                  className={`w-full h-full inline-block object-cover`}
-                  src={media.icon}
-                  alt={media.name}
-                />
-              </a>
-            ))}
+            {socialMedia.map((media, idx) => {
+              if (media.state) {
+                return (
+                  <button
+                    key={media.name}
+                    className={`w-12 h-12 inline-block ${
+                      idx !== socialMedia.length && "mr-4"
+                    }`}
+                    onClick={() => setOpen(media.state)}
+                  >
+                    <img
+                      className={`w-full h-full inline-block object-cover`}
+                      src={media.icon}
+                      alt={media.name}
+                    />
+                  </button>
+                );
+              }
+              return (
+                <a
+                  className={`w-12 h-12 inline-block ${
+                    idx !== socialMedia.length && "mr-4"
+                  }`}
+                  key={media.name}
+                  href={media.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className={`w-full h-full inline-block object-cover`}
+                    src={media.icon}
+                    alt={media.name}
+                  />
+                </a>
+              );
+            })}
           </div>
 
           <p className="text-xl font-light  text-gray-800 mb-8 max-w-md text-center mt-8">
@@ -87,6 +139,20 @@ const MainSection = () => {
           </p>
         </div>
       </div>
+
+      {modals.map(
+        (m) =>
+          m.isOpen && (
+            <Modal
+              key={m.title}
+              isOpen={m.isOpen}
+              icon={m.icon}
+              onClose={() => setOpen(defaultState)}
+              title={m.title}
+              content={m.content}
+            />
+          )
+      )}
     </div>
   );
 };
