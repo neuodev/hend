@@ -133,7 +133,7 @@ const MainSection = () => {
             })}
           </div>
 
-          <p className="text-xl font-light  text-gray-800 mb-8 max-w-md text-center mt-8">
+          <p className="text-xl font-light px-4 text-gray-800 mb-8 max-w-md text-center mt-8">
             If there is one thing to know about me it’s that I love to learn,
             grow and glow.
           </p>
