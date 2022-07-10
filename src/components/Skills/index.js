@@ -11,6 +11,7 @@ const Skills = () => {
       <div className="flex max-w-screen-lg flex-wrap items-center justify-center">
         {skills.map((skill) => (
           <div
+            data-aos="flip-right"
             key={skill}
             className="flex flex-col items-center justify-center flex-wrap pb-6 pr-6"
           >
