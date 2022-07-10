@@ -56,7 +56,7 @@ const MainSection = () => {
     },
   ];
   return (
-    <div className="h-screen">
+    <div className="min-h-screen sm:h-screen">
       <div className="grid grid-cols-12 grid-rows-6 h-full w-full">
         <div
           className="col-span-12 md:col-start-7 md:col-end-13 row-span-3 md:row-span-full bg-gray-100"
@@ -66,7 +66,7 @@ const MainSection = () => {
             backgroundPosition: "40% 20%",
           }}
         />
-        <div className="col-span-12 md:col-start-1 md:col-end-7 row-span-3 md:row-span-full flex flex-col items-center justify-center">
+        <div className="col-span-12 md:col-start-1 md:col-end-7 row-span-3 md:row-span-full flex flex-col items-center justify-center py-5">
           <h1 className="text-5xl font-bold text-gray-800 mb-4">
             Hend ibarhim
           </h1>
@@ -80,7 +80,7 @@ const MainSection = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer mr-4"
+              className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 font-semibold hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer mr-4"
             >
               My projects
             </Link>
@@ -88,7 +88,7 @@ const MainSection = () => {
             <a
               href="/files/Hend  Ibrahim - SEO Specialist.pdf"
               download
-              className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer"
+              className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 font-semibold hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer"
             >
               My Resume
             </a>

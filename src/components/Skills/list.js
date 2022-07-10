@@ -3,7 +3,7 @@ export const skills = [
   "Keyword research",
   "On-page SEO",
   "Link building",
-  "Google tools (GA4 & GSC& GDS)",
+  "Google tools",
   "A/B testing",
   "Local SEO",
   "Social Skills",
