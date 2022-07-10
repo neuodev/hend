@@ -12,5 +12,5 @@ app.get("*", function (req, res) {
   res.redirect("/");
 });
 
-const PORT = 9000;
+const PORT = 80;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
