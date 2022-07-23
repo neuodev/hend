@@ -3,7 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 
-const Slides = () => {
+const Slides = ({ folderName, numOfImages }) => {
+  const slides = (() => {
+    const paths = [];
+    for (let i = 1; i <= numOfImages; i++) {
+      paths.push(`/assets/projects/${folderName}/${i}.png`);
+    }
+
+    return paths;
+  })();
+
+  console.log(slides);
   return (
     <div className="h-full px-4">
       <Swiper
@@ -15,12 +25,12 @@ const Slides = () => {
         modules={[Pagination, Navigation]}
         className="w-full h-full bg-gray-100 rounded-xl shadow-xl"
       >
-        {[1, 2, 3, 4, 5].map((idx) => (
+        {slides.map((path) => (
           <SwiperSlide
-            key={idx}
+            key={path}
             className="flex items-center justify-center bg-white"
           >
-            Slide {idx}
+            <img src={path} alt="Results" />
           </SwiperSlide>
         ))}
       </Swiper>

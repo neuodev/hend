@@ -17,7 +17,10 @@ const Projects = () => {
             data-aos-delay="100"
             className="col-span-12 lg:col-span-6 row-span-3 lg:row-span-full"
           >
-            <Slides />
+            <Slides
+              folderName={project.folderName}
+              numOfImages={project.numOfImages}
+            />
           </div>
           <div className="col-span-12 lg:col-span-6 row-span-3 lg:row-span-full flex flex-col items-center justify-center p-4">
             <h1 className="text-3xl text-gray-800">{project.title}</h1>
