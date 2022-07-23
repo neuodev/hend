@@ -5,7 +5,7 @@ const Tools = () => {
   return (
     <div className="flex items-center justify-center flex-col border-b border-gray-200 py-10">
       <h1 className="text-5xl font-bold text-center mb-10 text-gray-800">
-        Tools
+        Tools ⚙️ 👁️ 🧠
       </h1>
 
       <div className="flex max-w-screen-lg flex-wrap items-center justify-center">

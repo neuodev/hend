@@ -5,16 +5,19 @@ import Slides from "./Slides";
 const Projects = () => {
   return (
     <div>
+      <h1 className="text-5xl font-bold text-center mt-20 text-gray-800">
+        Projects 🎯💡📈
+      </h1>
       {projects.map((project, idx) => (
         <div
           data-aos="fade-right"
           id={`project-${idx + 1}`}
           key={idx}
-          className="grid grid-cols-12 grid-rows-6 w-full min-h-screen border-b border-gray-200 py-20"
+          className="grid grid-cols-12 grid-rows-6 w-full border-b border-gray-200 py-20"
         >
           <div
             data-aos="flip-right"
-            data-aos-delay="100"
+            data-aos-delay="90"
             className="col-span-12 lg:col-span-6 row-span-3 lg:row-span-full"
           >
             <Slides

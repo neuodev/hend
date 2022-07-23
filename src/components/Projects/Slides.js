@@ -13,9 +13,8 @@ const Slides = ({ folderName, numOfImages }) => {
     return paths;
   })();
 
-  console.log(slides);
   return (
-    <div className="h-full px-4">
+    <div className="h-full px-4 flex items-center justify-center">
       <Swiper
         spaceBetween={30}
         pagination={{
@@ -23,7 +22,7 @@ const Slides = ({ folderName, numOfImages }) => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="w-full h-full bg-gray-100 rounded-xl shadow-xl"
+        className="w-full bg-gray-100 rounded-xl shadow-xl"
       >
         {slides.map((path) => (
           <SwiperSlide

@@ -13,7 +13,7 @@ const Work = () => {
   return (
     <div className="py-10">
       <h1 className="text-5xl font-bold text-center mb-10 text-gray-800">
-        Work Experience
+        Work Experience 📌 🏆 🥇 💯
       </h1>
       <VerticalTimeline>
         {workExperiences.map((we, idx) => {
@@ -29,12 +29,12 @@ const Work = () => {
               }}
               iconStyle={{ background: timeLineColor, color: "#fff" }}
             >
-              <h3 className="vertical-timeline-element-title">
-                {we.jobTitle} @{" "}
-                <p className="text-sm text-white inline-block">
-                  {we.companyName}
-                </p>
+              <h3 className="vertical-timeline-element-title underline">
+                {we.jobTitle}
               </h3>
+              <span className="text-sm text-white inline-block">
+                @ {we.companyName}
+              </span>
               <p className="text-xs text-white underline">Responsibilities</p>
               <ul className="list-disc px-3">
                 {we.responsibilities.map((a) => (
@@ -43,16 +43,6 @@ const Work = () => {
                   </li>
                 ))}
               </ul>
-              {we.achievements !== null && (
-                <section>
-                  <p className="text-xs text-white underline">
-                    Key Achievements
-                  </p>
-                  <span className="leading-relaxed text-sm font-normal mt-1 capitalize">
-                    {we.achievements}
-                  </span>
-                </section>
-              )}
             </VerticalTimelineElement>
           );
         })}

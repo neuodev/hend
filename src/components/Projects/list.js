@@ -12,8 +12,8 @@ export const projects = [
     numOfImages: 7,
   },
   {
-    title: "Todo",
-    body: "Add description",
+    title: "Service Company",
+    body: "Managed SEO technical audit to identify all the technical issues that affect the website ranking. Created targeted keyword research& mapping and optimized all the existing pages and blog posts.",
     folderName: "3",
     numOfImages: 5,
   },

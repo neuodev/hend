@@ -16,7 +16,7 @@ const MainSection = () => {
         />
         <div className="col-span-12 md:col-start-1 md:col-end-7 row-span-3 md:row-span-full flex flex-col items-center justify-center pt-12">
           <h1 className="text-5xl font-bold text-gray-800 mb-4">
-            Hend ibarhim
+            Hend ibarhim 👋
           </h1>
           <p className="text-xl font-medium  text-gray-800 mb-8 text-center">
             Search Engine Optimization Specialist
@@ -34,7 +34,7 @@ const MainSection = () => {
             </Link>
 
             <a
-              href="/files/Hend  Ibrahim - SEO Specialist.pdf"
+              href="/files/HEND IBRAHIM + SEO Specialist.pdf"
               download
               className="inline-block px-8 py-2 border-gray-200 border-2 hover:border-indigo-400 rounded-full text-gray-600 font-semibold hover:text-indigo-600 text-sm transition-colors duration-300 cursor-pointer"
             >
