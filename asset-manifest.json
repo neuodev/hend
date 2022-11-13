@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hend_portfolio/static/css/main.02ccd5dd.css",
+    "main.js": "/hend_portfolio/static/js/main.8292fcc3.js",
+    "index.html": "/hend_portfolio/index.html",
+    "main.02ccd5dd.css.map": "/hend_portfolio/static/css/main.02ccd5dd.css.map",
+    "main.8292fcc3.js.map": "/hend_portfolio/static/js/main.8292fcc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02ccd5dd.css",
+    "static/js/main.8292fcc3.js"
+  ]
+}
