@@ -3,19 +3,19 @@ import Modal from "./Modal";
 
 const socialMedia = [
   {
+    icon: "/assets/upwork.png",
+    link: "https://www.upwork.com/freelancers/~01089d8ac511ce7350",
+    name: "UpWork",
+  },
+  {
     icon: "/assets/email.png",
-    link: "mailto:hendibrahim468@gmail.com?Subject=Let's%20Talk",
+    link: "mailto:me@hendibrahim.org?Subject=Let's%20Talk",
     name: "Email",
   },
   {
     icon: "/assets/linkedin.png",
     link: "https://www.linkedin.com/in/seoseoexpert/",
     name: "Linked In",
-  },
-  {
-    icon: "/assets/telegram.png",
-    link: "https://t.me/hendibrahimseo",
-    name: "Telegram",
   },
   {
     icon: "/assets/whatsapp.png",
@@ -31,15 +31,13 @@ const socialMedia = [
 const Social = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div>
-      {socialMedia.map((media, idx) => {
+    <div className="flex flex-row items-center justify-center space-x-4">
+      {socialMedia.map((media) => {
         if (media.state) {
           return (
             <button
               key={media.name}
-              className={`w-12 h-12 inline-block ${
-                idx !== socialMedia.length && "mr-4"
-              }`}
+              className={`w-12 h-12 flex items-center justify-center`}
               onClick={() => setOpen(media.state)}
             >
               <img
@@ -52,9 +50,7 @@ const Social = () => {
         }
         return (
           <a
-            className={`w-12 h-12 inline-block ${
-              idx !== socialMedia.length && "mr-4"
-            }`}
+            className={`w-12 h-12 inline-block`}
             key={media.name}
             href={media.link}
             target="_blank"
